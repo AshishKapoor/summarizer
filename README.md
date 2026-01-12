@@ -2,6 +2,9 @@
 
 Daily scrape of the top 30 Hacker News stories, summarized locally and served via Django REST + a Vite/React UI.
 
+<img width="1438" height="1242" alt="Screenshot 2026-01-13 at 1 47 38 AM" src="https://github.com/user-attachments/assets/ba74e681-3a83-4d52-b602-d83adb4732fd" />
+
+
 ## Stack
 
 - Backend: Django 6, Django REST Framework, drf-spectacular, SQLite, requests + BeautifulSoup scraper
