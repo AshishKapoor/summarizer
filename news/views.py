@@ -1,3 +1,4 @@
+from django.db.models import Max
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 from drf_spectacular.utils import extend_schema
@@ -11,14 +12,36 @@ from .services.pipeline import refresh_top_articles_and_summaries
 
 
 class ArticleViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = Article.objects.prefetch_related("summaries").order_by(
-        "-scraped_at", "rank"
-    )[:30]
     serializer_class = ArticleSerializer
+    
+    def get_queryset(self):
+        """Return only the 30 articles from the most recent scrape batch."""
+        # Get the most recent scrape time
+        latest_scrape = Article.objects.aggregate(Max('scraped_at'))['scraped_at__max']
+        
+        if latest_scrape is None:
+            return Article.objects.none()
+        
+        # Get all articles scraped within 5 minutes of the latest scrape
+        # (they're part of the same batch)
+        from datetime import timedelta
+        cutoff_time = latest_scrape - timedelta(minutes=5)
+        
+        # Return only articles from the latest scrape batch, ordered by rank
+        queryset = Article.objects.prefetch_related("summaries").filter(
+            scraped_at__gte=cutoff_time
+        ).order_by("rank")
+        
+        # For list view, limit to 30
+        if self.action == 'list':
+            return queryset[:30]
+        
+        # For detail view, return all articles (not filtered by scrape time)
+        return Article.objects.prefetch_related("summaries").order_by("rank")
 
 
 class SummaryViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = Summary.objects.select_related("article").order_by("-generated_at")
+    queryset = Summary.objects.select_related("article").order_by("generated_at")
     serializer_class = SummarySerializer
 
 

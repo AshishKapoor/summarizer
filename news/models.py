@@ -29,7 +29,7 @@ class Summary(models.Model):
 	generated_at = models.DateTimeField(auto_now_add=True)
 
 	class Meta:
-		ordering = ['-generated_at']
+		ordering = ['generated_at']
 
 	def __str__(self) -> str:  # pragma: no cover - convenience
 		return f"Summary for {self.article_id} ({self.model_name})"

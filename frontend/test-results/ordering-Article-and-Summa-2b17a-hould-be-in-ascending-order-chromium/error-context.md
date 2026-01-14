@@ -1,0 +1,760 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - img [ref=e10]
+        - text: Daily Hacker News distillations
+      - heading "All the signal. None of the noise." [level=1] [ref=e16]
+      - paragraph [ref=e17]: We scrape the top 30 Hacker News stories each day, summarize them locally on your Mac GPU, and surface the essentials in one sleek feed.
+      - generic [ref=e18]:
+        - button "Refresh now" [ref=e19] [cursor=pointer]:
+          - img [ref=e20]
+          - text: Refresh now
+        - link "Open API Explorer" [ref=e25] [cursor=pointer]:
+          - /url: http://localhost:8000/api/docs/
+          - text: Open API Explorer
+          - img [ref=e26]
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - paragraph [ref=e31]: Stories tracked
+        - generic [ref=e32]: "30"
+        - paragraph [ref=e33]: Top of Hacker News
+      - generic [ref=e34]:
+        - paragraph [ref=e35]: Total points
+        - generic [ref=e36]: "5595"
+        - paragraph [ref=e37]: Across today's picks
+      - generic [ref=e38]:
+        - paragraph [ref=e39]: Comments
+        - generic [ref=e40]: "2554"
+        - paragraph [ref=e41]: Conversation volume right now
+  - generic [ref=e42]:
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - paragraph [ref=e45]: Today's batch
+        - heading "Top 30 from Hacker News" [level=2] [ref=e46]
+      - generic [ref=e47]:
+        - img [ref=e48]
+        - text: Live summaries
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - generic [ref=e55]: "11"
+            - generic [ref=e56]:
+              - generic [ref=e57]: wired.com
+              - generic [ref=e58]: by pavel_lishin
+          - heading "X Didn't Fix Grok's 'Undressing' Problem. It Just Makes People Pay for It" [level=3] [ref=e59]:
+            - link "X Didn't Fix Grok's 'Undressing' Problem. It Just Makes People Pay for It" [ref=e60] [cursor=pointer]:
+              - /url: https://www.wired.com/story/x-didnt-fix-groks-undressing-problem-it-just-makes-people-pay-for-it/
+              - generic [ref=e61]: X Didn't Fix Grok's 'Undressing' Problem. It Just Makes People Pay for It
+              - img [ref=e62]
+        - generic [ref=e66]:
+          - paragraph [ref=e67]: Elon Musk’s X has apparently limited who can generate images with Grok. However, despite the changes, the chatbot is still being used to create “undressing” sexualized images on the platform.
+          - generic [ref=e68]:
+            - generic [ref=e69]:
+              - img [ref=e70]
+              - text: 92 points
+            - generic [ref=e72]:
+              - img [ref=e73]
+              - text: 58 comments
+            - generic [ref=e75]:
+              - img [ref=e76]
+              - text: "HN #46592827"
+      - generic [ref=e79]:
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - generic [ref=e83]: "27"
+            - generic [ref=e84]:
+              - generic [ref=e85]: azfamily.com
+              - generic [ref=e86]: by voxadam
+          - heading "Waymo passenger flees after car drives on Phoenix light rail tracks" [level=3] [ref=e87]:
+            - link "Waymo passenger flees after car drives on Phoenix light rail tracks" [ref=e88] [cursor=pointer]:
+              - /url: https://www.azfamily.com/2026/01/08/waymo-passenger-flees-after-car-drives-phoenix-light-rail-tracks/
+              - generic [ref=e89]: Waymo passenger flees after car drives on Phoenix light rail tracks
+              - img [ref=e90]
+        - generic [ref=e94]:
+          - paragraph [ref=e95]: A Waymo car was caught on camera driving down Phoenix light rail tracks. A passenger had to flee the car before it continued along the tracks. The incident caused no significant delays and the scene was clear by 9:15 a.m.
+          - generic [ref=e96]:
+            - generic [ref=e97]:
+              - img [ref=e98]
+              - text: 17 points
+            - generic [ref=e100]:
+              - img [ref=e101]
+              - text: 16 comments
+            - generic [ref=e103]:
+              - img [ref=e104]
+              - text: "HN #46593168"
+      - generic [ref=e107]:
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - generic [ref=e111]: "30"
+            - generic [ref=e112]:
+              - generic [ref=e113]: media.ccc.de
+              - generic [ref=e114]: by fried-gluttony
+          - 'heading "39c3: In-house electronics manufacturing from scratch: How hard can it be? [video]" [level=3] [ref=e115]':
+            - 'link "39c3: In-house electronics manufacturing from scratch: How hard can it be? [video]" [ref=e116] [cursor=pointer]':
+              - /url: https://media.ccc.de/v/39c3-in-house-electronics-manufacturing-from-scratch-how-hard-can-it-be
+              - generic [ref=e117]: "39c3: In-house electronics manufacturing from scratch: How hard can it be? [video]"
+              - img [ref=e118]
+        - generic [ref=e122]:
+          - paragraph [ref=e123]: Augustin Bielefeld andAlexander Willer spent more than 1 year setting up their own production line in their office in Hamburg. They believe that high-quality high-mix/low volume manufacturing of electronics in Europe is economically viable and accessible to small companies with a lower-than-expected up-front investment.
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - img [ref=e126]
+              - text: 238 points
+            - generic [ref=e128]:
+              - img [ref=e129]
+              - text: 99 comments
+            - generic [ref=e131]:
+              - img [ref=e132]
+              - text: "HN #46553137"
+      - generic [ref=e135]:
+        - generic [ref=e137]:
+          - generic [ref=e138]:
+            - generic [ref=e139]: "10"
+            - generic [ref=e141]: ycombinator.com
+          - heading "Clearspace (YC W23) Is Hiring an Applied Researcher (ML)" [level=3] [ref=e142]:
+            - link "Clearspace (YC W23) Is Hiring an Applied Researcher (ML)" [ref=e143] [cursor=pointer]:
+              - /url: https://www.ycombinator.com/companies/clearspace/jobs/GOWiDwp-research-engineer-at-clearspace
+              - generic [ref=e144]: Clearspace (YC W23) Is Hiring an Applied Researcher (ML)
+              - img [ref=e145]
+        - generic [ref=e149]:
+          - paragraph [ref=e150]: Clearspace is building the intentionality layer of the internet. Our mission is to build technology as effective atprotecting human attention as social media is at exploiting it. We are looking for an ML-focused engineer that will be responsible for training and improving a model.
+          - generic [ref=e151]:
+            - generic [ref=e152]:
+              - img [ref=e153]
+              - text: 0 points
+            - generic [ref=e155]:
+              - img [ref=e156]
+              - text: 0 comments
+            - generic [ref=e158]:
+              - img [ref=e159]
+              - text: "HN #46592461"
+      - generic [ref=e162]:
+        - generic [ref=e164]:
+          - generic [ref=e165]:
+            - generic [ref=e166]: "11"
+            - generic [ref=e167]:
+              - generic [ref=e168]: cloudamqp.com
+              - generic [ref=e169]: by byt3h3ad
+          - 'heading "Message Queues: A Simple Guide with Analogies (2024)" [level=3] [ref=e170]':
+            - 'link "Message Queues: A Simple Guide with Analogies (2024)" [ref=e171] [cursor=pointer]':
+              - /url: https://www.cloudamqp.com/blog/message-queues-exaplined-with-analogies.html
+              - generic [ref=e172]: "Message Queues: A Simple Guide with Analogies (2024)"
+              - img [ref=e173]
+        - generic [ref=e177]:
+          - paragraph [ref=e178]: A message queue is a technology that simply receives data, formally calledmessages, from a source system. It lines up these messages in the order they arrive, then sends each message to some final destination. This inherent nature of message queues makes them perfect for communication between systems in a microservice architecture.
+          - generic [ref=e179]:
+            - generic [ref=e180]:
+              - img [ref=e181]
+              - text: 53 points
+            - generic [ref=e183]:
+              - img [ref=e184]
+              - text: 17 comments
+            - generic [ref=e186]:
+              - img [ref=e187]
+              - text: "HN #46591402"
+      - generic [ref=e190]:
+        - generic [ref=e192]:
+          - generic [ref=e193]:
+            - generic [ref=e194]: "13"
+            - generic [ref=e195]:
+              - generic [ref=e196]: github.com
+              - generic [ref=e197]: by romshark
+          - heading "Building a 25 Gbit/s workstation for the SCION Association" [level=3] [ref=e198]:
+            - link "Building a 25 Gbit/s workstation for the SCION Association" [ref=e199] [cursor=pointer]:
+              - /url: https://github.com/scionassociation/blog-25gbit-workstation
+              - generic [ref=e200]: Building a 25 Gbit/s workstation for the SCION Association
+              - img [ref=e201]
+        - generic [ref=e205]:
+          - paragraph [ref=e206]: SCION is an IETF draft-stage technology of a growing alternative to theBorder Gateway Protocol (BGP) It's an innovative inter-ASrouting architecture designed to address BGP's fundamental flaws and security vulnerabilities.
+          - generic [ref=e207]:
+            - generic [ref=e208]:
+              - img [ref=e209]
+              - text: 50 points
+            - generic [ref=e211]:
+              - img [ref=e212]
+              - text: 15 comments
+            - generic [ref=e214]:
+              - img [ref=e215]
+              - text: "HN #46590541"
+      - generic [ref=e218]:
+        - generic [ref=e220]:
+          - generic [ref=e221]:
+            - generic [ref=e222]: "18"
+            - generic [ref=e223]:
+              - generic [ref=e224]: metacpan.org
+              - generic [ref=e225]: by mjs
+          - heading "Perlsecret – Perl secret operators and constants" [level=3] [ref=e226]:
+            - link "Perlsecret – Perl secret operators and constants" [ref=e227] [cursor=pointer]:
+              - /url: https://metacpan.org/dist/perlsecret/view/lib/perlsecret.pod
+              - generic [ref=e228]: Perlsecret – Perl secret operators and constants
+              - img [ref=e229]
+        - generic [ref=e233]:
+          - paragraph [ref=e234]: Perl has a long tradition of giving nicknames to some of its operators. The Perl "secret operators" have been discovered (or created) by Perl obfuscators and golfers, usually when looking for a shorter way to perform a given operation. The term "secret operator" was probably coined by Abigail in acomplang.perl.miscpost in January 2003.
+          - generic [ref=e235]:
+            - generic [ref=e236]:
+              - img [ref=e237]
+              - text: 12 points
+            - generic [ref=e239]:
+              - img [ref=e240]
+              - text: 0 comments
+            - generic [ref=e242]:
+              - img [ref=e243]
+              - text: "HN #46519839"
+      - generic [ref=e246]:
+        - generic [ref=e248]:
+          - generic [ref=e249]:
+            - generic [ref=e250]: "20"
+            - generic [ref=e251]:
+              - generic [ref=e252]: taylorkolasinski.com
+              - generic [ref=e253]: by taykolasinski
+          - 'heading "Reproducing DeepSeek''s MHC: When Residual Connections Explode" [level=3] [ref=e254]':
+            - 'link "Reproducing DeepSeek''s MHC: When Residual Connections Explode" [ref=e255] [cursor=pointer]':
+              - /url: https://taylorkolasinski.com/notes/mhc-reproduction/
+              - generic [ref=e256]: "Reproducing DeepSeek's MHC: When Residual Connections Explode"
+              - img [ref=e257]
+        - generic [ref=e261]:
+          - paragraph [ref=e262]: "The Sinkhorn-Knopp algorithm is dead simple: Twenty iterations is enough. Gradients flow back through all twenty iterations. The network learns the raw weightsHHH. The algorithm ensures the actual mixing matrix is always doubly stochastic."
+          - generic [ref=e263]:
+            - generic [ref=e264]:
+              - img [ref=e265]
+              - text: 82 points
+            - generic [ref=e267]:
+              - img [ref=e268]
+              - text: 24 comments
+            - generic [ref=e270]:
+              - img [ref=e271]
+              - text: "HN #46588572"
+      - generic [ref=e274]:
+        - generic [ref=e276]:
+          - generic [ref=e277]:
+            - generic [ref=e278]: "21"
+            - generic [ref=e279]:
+              - generic [ref=e280]: bbc.com
+              - generic [ref=e281]: by reconnecting
+          - heading "Ai, Japanese chimpanzee who counted and painted dies at 49" [level=3] [ref=e282]:
+            - link "Ai, Japanese chimpanzee who counted and painted dies at 49" [ref=e283] [cursor=pointer]:
+              - /url: https://www.bbc.com/news/articles/cj9r3zl2ywyo
+              - generic [ref=e284]: Ai, Japanese chimpanzee who counted and painted dies at 49
+              - img [ref=e285]
+        - generic [ref=e289]:
+          - paragraph [ref=e290]: Ai was born in western Africa and arrived at the Japanese institute in 1977. She became the namesake of the Ai Project, a research programme into the "chimpanzee mind" A scarf made from one of Ai's paintings was gifted to Dame Jane Goodall.
+          - generic [ref=e291]:
+            - generic [ref=e292]:
+              - img [ref=e293]
+              - text: 147 points
+            - generic [ref=e295]:
+              - img [ref=e296]
+              - text: 51 comments
+            - generic [ref=e298]:
+              - img [ref=e299]
+              - text: "HN #46585947"
+      - generic [ref=e302]:
+        - generic [ref=e304]:
+          - generic [ref=e305]:
+            - generic [ref=e306]: "22"
+            - generic [ref=e307]:
+              - generic [ref=e308]: blog.yiningkarlli.com
+              - generic [ref=e309]: by pantalaimon
+          - heading "Personal thoughts/notes from working on Zootopia 2" [level=3] [ref=e310]:
+            - link "Personal thoughts/notes from working on Zootopia 2" [ref=e311] [cursor=pointer]:
+              - /url: https://blog.yiningkarlli.com/2025/12/zootopia-2.html
+              - generic [ref=e312]: Personal thoughts/notes from working on Zootopia 2
+              - img [ref=e313]
+        - generic [ref=e317]:
+          - paragraph [ref=e318]: Zootopia 2 picks up where the first film left off, taking us deeper into the wonderful and wild animal world of the city. The world of Zootopia is incredibly detailed and visually rich, and that detail has to hold up at scales ranging from a tiny shrew to the tallest giraffe.
+          - generic [ref=e319]:
+            - generic [ref=e320]:
+              - img [ref=e321]
+              - text: 233 points
+            - generic [ref=e323]:
+              - img [ref=e324]
+              - text: 46 comments
+            - generic [ref=e326]:
+              - img [ref=e327]
+              - text: "HN #46525639"
+      - generic [ref=e330]:
+        - generic [ref=e332]:
+          - generic [ref=e333]:
+            - generic [ref=e334]: "23"
+            - generic [ref=e335]:
+              - generic [ref=e336]: blog.gripdev.xyz
+              - generic [ref=e337]: by martinpeck
+          - heading "Launch a Debugging Terminal into GitHub Actions" [level=3] [ref=e338]:
+            - link "Launch a Debugging Terminal into GitHub Actions" [ref=e339] [cursor=pointer]:
+              - /url: https://blog.gripdev.xyz/2026/01/10/actions-terminal-on-failure-for-debugging/
+              - generic [ref=e340]: Launch a Debugging Terminal into GitHub Actions
+              - img [ref=e341]
+        - generic [ref=e345]:
+          - paragraph [ref=e346]: Free and open-source way to get an interactive web terminal to your GitHub Action when it fails. Try it out here:https://actions-term.gripdev.xyz/(code)
+          - generic [ref=e347]:
+            - generic [ref=e348]:
+              - img [ref=e349]
+              - text: 111 points
+            - generic [ref=e351]:
+              - img [ref=e352]
+              - text: 42 comments
+            - generic [ref=e354]:
+              - img [ref=e355]
+              - text: "HN #46587498"
+      - generic [ref=e358]:
+        - generic [ref=e360]:
+          - generic [ref=e361]:
+            - generic [ref=e362]: "24"
+            - generic [ref=e363]:
+              - generic [ref=e364]: digitalseams.com
+              - generic [ref=e365]: by bobbiechen
+          - heading "Computers that used to be human" [level=3] [ref=e366]:
+            - link "Computers that used to be human" [ref=e367] [cursor=pointer]:
+              - /url: https://digitalseams.com/blog/computers-that-used-to-be-human
+              - generic [ref=e368]: Computers that used to be human
+              - img [ref=e369]
+        - generic [ref=e373]:
+          - paragraph [ref=e374]: Human computers co-existed with electronic computers as late as the 1960s. Real people would perform calculations by hand and with tools like lookup tables, slide rules, and mechanical calculators.
+          - generic [ref=e375]:
+            - generic [ref=e376]:
+              - img [ref=e377]
+              - text: 30 points
+            - generic [ref=e379]:
+              - img [ref=e380]
+              - text: 2 comments
+            - generic [ref=e382]:
+              - img [ref=e383]
+              - text: "HN #46589543"
+      - generic [ref=e386]:
+        - generic [ref=e388]:
+          - generic [ref=e389]:
+            - generic [ref=e390]: "25"
+            - generic [ref=e391]:
+              - generic [ref=e392]: github.com
+              - generic [ref=e393]: by walterbell
+          - heading "Ansible battle tested hardening for Linux, SSH, Nginx, MySQL" [level=3] [ref=e394]:
+            - link "Ansible battle tested hardening for Linux, SSH, Nginx, MySQL" [ref=e395] [cursor=pointer]:
+              - /url: https://github.com/dev-sec/ansible-collection-hardening
+              - generic [ref=e396]: Ansible battle tested hardening for Linux, SSH, Nginx, MySQL
+              - img [ref=e397]
+        - generic [ref=e401]:
+          - paragraph [ref=e402]: Theos-hardening role is now part of the hardening-collection. The last release of the standalone role was6.2.0. The other roles are in separate archives repositories.
+          - generic [ref=e403]:
+            - generic [ref=e404]:
+              - img [ref=e405]
+              - text: 12 points
+            - generic [ref=e407]:
+              - img [ref=e408]
+              - text: 2 comments
+            - generic [ref=e410]:
+              - img [ref=e411]
+              - text: "HN #46529507"
+      - generic [ref=e414]:
+        - generic [ref=e416]:
+          - generic [ref=e417]:
+            - generic [ref=e418]: "26"
+            - generic [ref=e419]:
+              - generic [ref=e420]: sr.ericli.tech
+              - generic [ref=e421]: by ericlmtn
+          - 'heading "Show HN: Customizable OSINT dashboard to monitor the situation" [level=3] [ref=e422]':
+            - 'link "Show HN: Customizable OSINT dashboard to monitor the situation" [ref=e423] [cursor=pointer]':
+              - /url: https://sr.ericli.tech/?d=N4IgbiBcCMA0IHcoG1QBcogEYngGxQAZZiAOWUgXXgGMpQBHTASwCcBDAO1xAAcoAzIWGEAvqNjpMAWx4FIycsWjKAbNRB1IoLcgEAmAHSqALAHYArAOgnYFk4YumBF6OvgAvKGfgBnKGisAK4ApvDckCAAkhzc4pIgGJEhckQU6VS09CBMkWxcIPFSkfz4KNBKsKqwZhpaoP6RNi5mAjwhSSAA0gAW7NIhnCHMAAQA9kFoI+y+IwDKQbysIQMjADIh7AAmIazjAGYjMVwjWACeIwBSXEHsrBfWAPyFEsUgZ6kKFTVVsACcdWyQUwPTQaF4vkgAHooQg4YYzhM0EEsCFDDQxtJYew0DQeo8wABeNYAfX2NFYAHlEQB1ABapBelFEQA
+              - generic [ref=e424]: "Show HN: Customizable OSINT dashboard to monitor the situation"
+              - img [ref=e425]
+        - generic [ref=e429]:
+          - paragraph [ref=e430]: "OSINT dashboard to monitor the situation. Show HN: Customizable OSINT Dashboard. Show the latest news from OSINT on our live blog."
+          - generic [ref=e431]:
+            - generic [ref=e432]:
+              - img [ref=e433]
+              - text: 17 points
+            - generic [ref=e435]:
+              - img [ref=e436]
+              - text: 6 comments
+            - generic [ref=e438]:
+              - img [ref=e439]
+              - text: "HN #46591589"
+      - generic [ref=e442]:
+        - generic [ref=e444]:
+          - generic [ref=e445]:
+            - generic [ref=e446]: "27"
+            - generic [ref=e447]:
+              - generic [ref=e448]: openculture.com
+              - generic [ref=e449]: by bookofjoe
+          - heading "JRR Tolkien reads from The Hobbit for 30 Minutes (1952)" [level=3] [ref=e450]:
+            - link "JRR Tolkien reads from The Hobbit for 30 Minutes (1952)" [ref=e451] [cursor=pointer]:
+              - /url: https://www.openculture.com/2026/01/j-r-r-tolkien-reads-from-the-hobbit-for-30-minutes-1952.html
+              - generic [ref=e452]: JRR Tolkien reads from The Hobbit for 30 Minutes (1952)
+              - img [ref=e453]
+        - generic [ref=e457]:
+          - paragraph [ref=e458]: J.R. R. Tolkien read from The Hobbit for the first time on tape in 1952. Tolkien also read and sang from The Lord of the Rings during the session.
+          - generic [ref=e459]:
+            - generic [ref=e460]:
+              - img [ref=e461]
+              - text: 284 points
+            - generic [ref=e463]:
+              - img [ref=e464]
+              - text: 112 comments
+            - generic [ref=e466]:
+              - img [ref=e467]
+              - text: "HN #46526896"
+      - generic [ref=e470]:
+        - generic [ref=e472]:
+          - generic [ref=e473]:
+            - generic [ref=e474]: "29"
+            - generic [ref=e475]:
+              - generic [ref=e476]: lightpanda.io
+              - generic [ref=e477]: by gearnode
+          - heading "Lightpanda migrate DOM implementation to Zig" [level=3] [ref=e478]:
+            - link "Lightpanda migrate DOM implementation to Zig" [ref=e479] [cursor=pointer]:
+              - /url: https://lightpanda.io/blog/posts/migrating-our-dom-to-zig
+              - generic [ref=e480]: Lightpanda migrate DOM implementation to Zig
+              - img [ref=e481]
+        - generic [ref=e485]:
+          - paragraph [ref=e486]: The Lightpanda codebase can be described as a Zig layer sitting between V8 and LibDOM. We replaced LibDOM with our own Zig-based DOM implementation. There are single-digit % performance gains, but the real win is a unified codebase that’s easier to extend.
+          - generic [ref=e487]:
+            - generic [ref=e488]:
+              - img [ref=e489]
+              - text: 174 points
+            - generic [ref=e491]:
+              - img [ref=e492]
+              - text: 99 comments
+            - generic [ref=e494]:
+              - img [ref=e495]
+              - text: "HN #46586179"
+      - generic [ref=e498]:
+        - generic [ref=e500]:
+          - generic [ref=e501]:
+            - generic [ref=e502]: "30"
+            - generic [ref=e503]:
+              - generic [ref=e504]: gpfault.net
+              - generic [ref=e505]: by ibobev
+          - heading "A Couple 3D AABB Tricks" [level=3] [ref=e506]:
+            - link "A Couple 3D AABB Tricks" [ref=e507] [cursor=pointer]:
+              - /url: https://gpfault.net/posts/aabb-tricks.html
+              - generic [ref=e508]: A Couple 3D AABB Tricks
+              - img [ref=e509]
+        - generic [ref=e513]:
+          - paragraph [ref=e514]: Axis-aligned bounding boxes are ubiquitous in 3D programming. AABB is represented as a point (usually the centroid) plus the dimensions of the box. A better (in my opinion) representation is storing the min and max values for the x, y and z coordinates.
+          - generic [ref=e515]:
+            - generic [ref=e516]:
+              - img [ref=e517]
+              - text: 17 points
+            - generic [ref=e519]:
+              - img [ref=e520]
+              - text: 7 comments
+            - generic [ref=e522]:
+              - img [ref=e523]
+              - text: "HN #46524058"
+      - generic [ref=e526]:
+        - generic [ref=e528]:
+          - generic [ref=e529]:
+            - generic [ref=e530]: "28"
+            - generic [ref=e531]:
+              - generic [ref=e532]: arstechnica.com
+              - generic [ref=e533]: by barishnamazov
+          - heading "Google removes AI health summaries after investigation finds dangerous flaws" [level=3] [ref=e534]:
+            - link "Google removes AI health summaries after investigation finds dangerous flaws" [ref=e535] [cursor=pointer]:
+              - /url: https://arstechnica.com/ai/2026/01/google-removes-some-ai-health-summaries-after-investigation-finds-dangerous-flaws/
+              - generic [ref=e536]: Google removes AI health summaries after investigation finds dangerous flaws
+              - img [ref=e537]
+        - generic [ref=e541]:
+          - paragraph [ref=e542]: AI Overviews provided false liver test information experts called alarming. On Sunday, Googleremovedsome of itsAI Overviewshealth summaries after a Guardian investigation found people were being put at risk by false and misleading information. The removals came after the newspaper found that Google’s generative AI feature delivered inaccurate health information at the top of search results, potentially leading seriously ill patients to mistakenly conclude they are in good health. Google disabled specific queries, such as “what is the normal range for liver blood tests,” after experts contacted by The Guardian flagged the results as dangerous.
+          - generic [ref=e543]:
+            - generic [ref=e544]:
+              - img [ref=e545]
+              - text: 170 points
+            - generic [ref=e547]:
+              - img [ref=e548]
+              - text: 105 comments
+            - generic [ref=e550]:
+              - img [ref=e551]
+              - text: "HN #46595419"
+      - generic [ref=e554]:
+        - generic [ref=e556]:
+          - generic [ref=e557]:
+            - generic [ref=e558]: "1"
+            - generic [ref=e559]:
+              - generic [ref=e560]: claude.com
+              - generic [ref=e561]: by adocomplete
+          - 'heading "Cowork: Claude Code for the rest of your work" [level=3] [ref=e562]':
+            - 'link "Cowork: Claude Code for the rest of your work" [ref=e563] [cursor=pointer]':
+              - /url: https://claude.com/blog/cowork-research-preview
+              - generic [ref=e564]: "Cowork: Claude Code for the rest of your work"
+              - img [ref=e565]
+        - generic [ref=e569]:
+          - paragraph [ref=e570]: Cowork is a new way to use Claude for non-coding tasks. In Cowork, you give Claude access to a folder of your choosing on your computer. Claude can then read, edit, or create files in that folder. It can re-organize your downloads by sorting and renaming each file.
+          - generic [ref=e571]:
+            - generic [ref=e572]:
+              - img [ref=e573]
+              - text: 949 points
+            - generic [ref=e575]:
+              - img [ref=e576]
+              - text: 431 comments
+            - generic [ref=e578]:
+              - img [ref=e579]
+              - text: "HN #46593022"
+      - generic [ref=e582]:
+        - generic [ref=e584]:
+          - generic [ref=e585]:
+            - generic [ref=e586]: "2"
+            - generic [ref=e587]:
+              - generic [ref=e588]: cssence.com
+              - generic [ref=e589]: by pabs3
+          - heading "Text-Based Web Browsers" [level=3] [ref=e590]:
+            - link "Text-Based Web Browsers" [ref=e591] [cursor=pointer]:
+              - /url: https://cssence.com/2026/text-based-web-browsers/
+              - generic [ref=e592]: Text-Based Web Browsers
+              - img [ref=e593]
+        - generic [ref=e597]:
+          - paragraph [ref=e598]: "EssayJanuary 8, 2026 Before I start, let me get two things out of the way: Well, I won’t be the judge of that. I like them, I have them installed, and I test every project I create in them. But they are not what I use to surf the web. Speaking of testing your creations, here’s the good news: If your project has a solid HTML foundation that you thenprogressively enhancewith CSS and JS, you are off to a great start. While CSS is the star of the show when it comes to new features, HTML ain’t stale either. If we put the long-awaitedstyleable selectsand Apple’s take ontoggle switchesaside, there’s a lot readily available cross-browser."
+          - generic [ref=e599]:
+            - generic [ref=e600]:
+              - img [ref=e601]
+              - text: 75 points
+            - generic [ref=e603]:
+              - img [ref=e604]
+              - text: 33 comments
+            - generic [ref=e606]:
+              - img [ref=e607]
+              - text: "HN #46597518"
+      - generic [ref=e610]:
+        - generic [ref=e612]:
+          - generic [ref=e613]:
+            - generic [ref=e614]: "3"
+            - generic [ref=e615]:
+              - generic [ref=e616]: github.com
+              - generic [ref=e617]: by admp
+          - 'heading "TimeCapsuleLLM: LLM trained only on data from 1800-1875" [level=3] [ref=e618]':
+            - 'link "TimeCapsuleLLM: LLM trained only on data from 1800-1875" [ref=e619] [cursor=pointer]':
+              - /url: https://github.com/haykgrigo3/TimeCapsuleLLM
+              - generic [ref=e620]: "TimeCapsuleLLM: LLM trained only on data from 1800-1875"
+              - img [ref=e621]
+        - generic [ref=e625]:
+          - paragraph [ref=e626]: A language model trained on data from certain places and time periods to reduce modern bias. Early prompts show the model responding with 1800's language and behavior.
+          - generic [ref=e627]:
+            - generic [ref=e628]:
+              - img [ref=e629]
+              - text: 603 points
+            - generic [ref=e631]:
+              - img [ref=e632]
+              - text: 246 comments
+            - generic [ref=e634]:
+              - img [ref=e635]
+              - text: "HN #46590280"
+      - generic [ref=e638]:
+        - generic [ref=e640]:
+          - generic [ref=e641]:
+            - generic [ref=e642]: "4"
+            - generic [ref=e643]:
+              - generic [ref=e644]: brethorsting.com
+              - generic [ref=e645]: by aaronbrethorst
+          - heading "Git Rebase for the Terrified" [level=3] [ref=e646]:
+            - link "Git Rebase for the Terrified" [ref=e647] [cursor=pointer]:
+              - /url: https://www.brethorsting.com/blog/2026/01/git-rebase-for-the-terrified/
+              - generic [ref=e648]: Git Rebase for the Terrified
+              - img [ref=e649]
+        - generic [ref=e653]:
+          - paragraph [ref=e654]: "As a maintainer of several OneBusAway projects, I regularly ask contributors to rebase their branches before merging. The response is often hesitation or outright fear. I get it. Rebase has a reputation for destroying work, and the warnings you see online don’t help. Here’s the thing: the worst case scenario for a rebase gone wrong is that you delete your local clone and start over. That’s it. Your remote fork still exists. The main repository still exists. You can always recover. With that fear addressed, let me show you how to rebase. When you create a branch from main and work on it for a few days, the main branch keeps moving. Other PRs get merged."
+          - generic [ref=e655]:
+            - generic [ref=e656]:
+              - img [ref=e657]
+              - text: 36 points
+            - generic [ref=e659]:
+              - img [ref=e660]
+              - text: 26 comments
+            - generic [ref=e662]:
+              - img [ref=e663]
+              - text: "HN #46530920"
+      - generic [ref=e666]:
+        - generic [ref=e668]:
+          - generic [ref=e669]:
+            - generic [ref=e670]: "5"
+            - generic [ref=e671]:
+              - generic [ref=e672]: walzr.com
+              - generic [ref=e673]: by The28thDuck
+          - heading "Postal Arbitrage" [level=3] [ref=e674]:
+            - link "Postal Arbitrage" [ref=e675] [cursor=pointer]:
+              - /url: https://walzr.com/postal-arbitrage
+              - generic [ref=e676]: Postal Arbitrage
+              - img [ref=e677]
+        - generic [ref=e681]:
+          - paragraph [ref=e682]: As of 2025, a stamp for a letter costs $0.78 in the United States. Amazon Prime sells items for less than that...with free shipping!
+          - generic [ref=e683]:
+            - generic [ref=e684]:
+              - img [ref=e685]
+              - text: 395 points
+            - generic [ref=e687]:
+              - img [ref=e688]
+              - text: 201 comments
+            - generic [ref=e690]:
+              - img [ref=e691]
+              - text: "HN #46591708"
+      - generic [ref=e694]:
+        - generic [ref=e696]:
+          - generic [ref=e697]:
+            - generic [ref=e698]: "6"
+            - generic [ref=e699]:
+              - generic [ref=e700]: blog.smartere.dk
+              - generic [ref=e701]: by mchro
+          - heading "Floppy disks turn out to be the greatest TV remote for kids" [level=3] [ref=e702]:
+            - link "Floppy disks turn out to be the greatest TV remote for kids" [ref=e703] [cursor=pointer]:
+              - /url: https://blog.smartere.dk/2026/01/floppy-disks-the-best-tv-remote-for-kids/
+              - generic [ref=e704]: Floppy disks turn out to be the greatest TV remote for kids
+              - img [ref=e705]
+        - generic [ref=e709]:
+          - paragraph [ref=e710]: Modern TVs are very poorly suited for kids. They require using complicated remotes or mobile phones. I wanted to build something for my 3-year old son that he could understand and use independently. It should be physical and tangible, i.e. it should be something he could touch and feel.
+          - generic [ref=e711]:
+            - generic [ref=e712]:
+              - img [ref=e713]
+              - text: 609 points
+            - generic [ref=e715]:
+              - img [ref=e716]
+              - text: 345 comments
+            - generic [ref=e718]:
+              - img [ref=e719]
+              - text: "HN #46587934"
+      - generic [ref=e722]:
+        - generic [ref=e724]:
+          - generic [ref=e725]:
+            - generic [ref=e726]: "7"
+            - generic [ref=e727]:
+              - generic [ref=e728]: s3data.computerhistory.org
+              - generic [ref=e729]: by LordGrey
+          - heading "The Cray-1 Computer System (1977) [pdf]" [level=3] [ref=e730]:
+            - link "The Cray-1 Computer System (1977) [pdf]" [ref=e731] [cursor=pointer]:
+              - /url: https://s3data.computerhistory.org/brochures/cray.cray1.1977.102638650.pdf
+              - generic [ref=e732]: The Cray-1 Computer System (1977) [pdf]
+              - img [ref=e733]
+        - generic [ref=e737]:
+          - paragraph [ref=e738]: "I)�\x04Ĭf����u\x05�cjk4a�I\x7f�|�d~��{\x1bE�I�v9|��ֶF���%=��S�\\���Ǣ����溶oq�yf㯻���n��e���-w�� �\x18\x1a\x03�wIN��\x04;\x01-:Ɯ��ѕ�ΛVQ��y�7S��ai\x11�AOn]*\x17Z�v\x17��h$� ��s����\x17\x16���\x03N�/��X�J��:F[m%Ɨ���7\x00DL|QS�1��\x11�RU�in=-\x02b\x07$�ʬ ��\x10�H$��L\x02t�JRIL&���H�RIJ��JO�F���I�\"6A�\x1aI$���\x7f�{�\x00���J�Y�������QH�7�\x11\x1a��F�\x02��\x12\x02\x14T�*W)&%)IJL�TRR�'X�Zlw�U@���[[���d��\x12S�]̴�H1�e3�k��8\x0f�\x01s}{����U��\x15��1�f���\x04\x1f\x15K#\x1b��٬\x18��\x12ֵ΀�K������\x03�7jO�ܼ���sq��E%�\x1eO�m�i>Ie�\x1b�0�ű�ԥ��t�����?�����\x12�,}�h\x0e|n>0 &n\x15M��\x07��4��. w�侜�>��k�\x07���h�]�\x0e��6f=���۔�YYv����$��IM����9v\x17��I2u \x1f�\x06 �` \x00\x01Ƌ'��%��\\����ƒב�]��,�:�ْ2�A�z�����>��������hKj���۔����\x1f�S��`��\x1f\x0e\x04\x7fW�k\x13?��y��}7��\x0f\x05�\"~))�� �(zu��M��M�MFϤ&C��oe�W�hi���CwA{��\x12Sth�X_��\x04\x7f��\x00����'�7j�p�En��]�SĬ\x0f��ޫ��m�\x7f�\\6��GƷ$�~\x12���\x00=�G\"��\x00[r��>�a�C�V��{C��'�D��А\x10�ޝ�3�o\x00][�\x7f��\x1f޺���j�,�\\��o�EM�\x12�\\��\x1c۲n4c���mq��~c>kg�g��c2���?�>�\x12��$� �R�R�)\x00���c�yIM|�6� _S�\x07���:��t� +u�z������ F��ai�c�Jq����\x16ö��E��\x1d6��b{-��pP�2k�n�\x1c\x1a$ >'�P��`\x0e���\\���\x13\x1f5Y�\x11�}\x0f��h\x10�\x06�#]<\x16��*is�\x00I@�ϧ�V,��i�? \x12SS�\x13\x01�1�cm2�6\"O$w\x13�\x13et&^� \\X1̱�\b�5�-E ���X_c�Z9'@���~��{� �� �p�#oт<\x11�\x7fL�\x15����H\x1b[ 6\x07˓�A��)��\x00��\x06:�� �w\x1a�F��<ǒ3:;+�v@s�9���\x03G\x11�e��Jr\x07��[�q7;i;��Aݻ��O/����9־jv�t��'Ek3�Q��6�A��g�*�Jy\x1b\x1e�3/w��^\x1d���\x1eNր\b��\x0f�Z�t�2�^C���5�X\x1a\x07�L��ل ���\x04�b|\x01'� )�O��Zq\x0e(\x04���ə�\x07����)��׽��\x05�/�'�\x00���[��\x1a����\x02�S��HlĐ�+x��Â$|�S��8�`��͍\x7f��n��3���G�����k�׺�\x1bIdGi�JE\x055\x0e ���F��>�fc�[\x01$�ILm�Z�Ө ��T\x7fbc�+�=�\x16��\x00g���$��_Lfm�����w6\x0e��\x13�\x1d\x0f}�t�Xm���H�Z<%�Jr�\x7fAgN�Ǹ����v���\x01�^���_Q�C�϶fwxx�^�[K�� ?%S\x13�ՙacw\x02\x06�\x11-=�Jm�\x10<|Ӧu�f�«oS���c�w<\x17 4��Jh����\x1c��a3�w\x1a\x12���1� �s�1�\x06� �:wW�JRS�G��lk�F���{�F\x1c{��@\x10�rY�Y��\x1a�. > u�-hp2\b�RS �fK o\x12�\b �*]?��ӝ-/t ������o��L�\x02I�Ԥ�$�U�sC\\\x1cZ�okw:\x1a|���Mu�\x1c��n- ��h�B��\x1f�N��8�!��/�=��F�b4�e]�Vq��� �. �j��=�\x00��k$���� +�痼��\x1f��M x)~��8�\x18�,lm��6�\x10|��2\x19S\x1c�th$��>=�ɭ�o\x0e\x1b��%/E#\x1d���\x1e&OޞƗ��\"{�. R���V�U����Y�?�\x03w�L�\x1e:���W���. �[���\bWgEW��:z�\\�̆��ȍB*k�t\x1a���\x079ޘ-`y��y�*:\x16>+\x1e��4>f\x1ct��x-\x15\x12��'�Js�B�\x18�e2k�I�G\x10|�h���E��s�\x1b�s�L�4�uڭv�s[��,#�Z�u��\\. ��ǖm{H\x01�p�Zx ��\x18_Wq�l���\x04��. �4��#~Ȩd��\\\x1c�\x03�0ӷ�G���RS�G@����\x17=�\x12�����\"�􊱝���\x06�\x0e{��\x1e^ �U�sk�/ �c�\x1d �G�%4���QC�l�ۜ7\x1dI��)�R��I�\x1a�Q\x02����2\x01\x05�t�ku&9II������A\x10G��o�,v�\x05�\x16��շw�� �]w\x1e�9�. ��<�i�\x01�L޿C�K��ׁ^������d�]w��:���\\�վ\x04\x10B��\x165�ރ�-��븙�>+FTl�T�`��Ԡ�=�\x03\x1a� : �˷\x1d���;��Y�����-�^w9�2�xԨ�Σ_T�Z�����aO35�`L�� h���%&���Kd�\x11#���\x005�(����w�=���1����nubƇ �\x0e\x1bH#EbJJh��+��hs��ݛ�u-�:AO�\x1f\x1c�;\x1c�c�w�. ԙ�WRIHq1\x1b�XcI wq. ?yFI$��&H\x14�I^RI$��%6ԓ�JP\x10��\x12!%*���)?����$��ӻ\x04�I5*Y��{����J�Y��s�\x00���Hn�\x15�L�\x11�\x10 g \x12\x0eO(��%J\x12��R��rSr���u\x0e�WS��`�름\x11�\x07�YI%9\x14�\x00-e��e���\x0f\"\x01�� *�7M�\x12�mlͤ9���\x1a+e#�(s3�\x15Y׋��ǆ�ݷI�1�[�g��Ͱ\x10K��j#�o&��T�\x1a �兏oS��nS,n���\x03f�\x02�f\x12S���*��m\x04�\x18ZZG>�\x11*�בe���\x00\x1e�����vVORʲ��� �w�7\x12牁:@C���c �m!�P�Q�\x027\x02 \x12ߒJu)�u�d���l\x01�ooo\x7f��?Km\x19V�I&��G�Ք�ޥ��2˙cv�\x1d^ͦ#X �S�>�o�(eV��Y[�����\x00\x06�\x00��~J���[����rkw�I >���1��\x1bU��*��\x0f�Ϣ�\x05g�Q�]�(#�\x00��Z9�m¥ֻ�\x02��I. M}\x1b:݌� :�\x10}���m�8��\b��k��b�+�5��n�4����WY�\x15��(�>4c�=��\x12�����W�>�f0�@o}��."
+          - generic [ref=e739]:
+            - generic [ref=e740]:
+              - img [ref=e741]
+              - text: 94 points
+            - generic [ref=e743]:
+              - img [ref=e744]
+              - text: 50 comments
+            - generic [ref=e746]:
+              - img [ref=e747]
+              - text: "HN #46557733"
+      - generic [ref=e750]:
+        - generic [ref=e752]:
+          - generic [ref=e753]:
+            - generic [ref=e754]: "8"
+            - generic [ref=e755]:
+              - generic [ref=e756]: youtube.com
+              - generic [ref=e757]: by cjaackie
+          - heading "The chess bot on Delta Air Lines will destroy you (2024) [video]" [level=3] [ref=e758]:
+            - link "The chess bot on Delta Air Lines will destroy you (2024) [video]" [ref=e759] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=c0mLhHDcY3I
+              - generic [ref=e760]: The chess bot on Delta Air Lines will destroy you (2024) [video]
+              - img [ref=e761]
+        - generic [ref=e765]:
+          - paragraph [ref=e766]: The chess bot on Delta Air Lines will destroy you (2024) [video] The chess bot will be able to play on any Delta flight. The bot is called Delta Chess.
+          - generic [ref=e767]:
+            - generic [ref=e768]:
+              - img [ref=e769]
+              - text: 233 points
+            - generic [ref=e771]:
+              - img [ref=e772]
+              - text: 207 comments
+            - generic [ref=e774]:
+              - img [ref=e775]
+              - text: "HN #46593395"
+      - generic [ref=e778]:
+        - generic [ref=e780]:
+          - generic [ref=e781]:
+            - generic [ref=e782]: "9"
+            - generic [ref=e783]:
+              - generic [ref=e784]: tinyhack.com
+              - generic [ref=e785]: by nateb2022
+          - heading "Implementing a web server in a single printf() call (2014)" [level=3] [ref=e786]:
+            - link "Implementing a web server in a single printf() call (2014)" [ref=e787] [cursor=pointer]:
+              - /url: https://tinyhack.com/2014/03/12/implementing-a-web-server-in-a-single-printf-call/
+              - generic [ref=e788]: Implementing a web server in a single printf() call (2014)
+              - img [ref=e789]
+        - generic [ref=e793]:
+          - paragraph [ref=e794]: "Tinyhack. com A hacker does for love what others would not do for money. A guy just forwarded a joke that most of us will already knowJeff Dean Facts(alsohereandhere). Everytime I read that list, this part stands out: Jeff Dean once implemented a web server in a single printf() call. Other engineers added thousands of lines of explanatory comments but still don’t understand exactly how it works. Today that program is the front-end to Google Search. It is really possible to implement a web server using a single printf call, but I haven’t found anyone doing it. So this time after reading the list, I decided to implement it."
+          - generic [ref=e795]:
+            - generic [ref=e796]:
+              - img [ref=e797]
+              - text: 48 points
+            - generic [ref=e799]:
+              - img [ref=e800]
+              - text: 3 comments
+            - generic [ref=e802]:
+              - img [ref=e803]
+              - text: "HN #46549714"
+      - generic [ref=e806]:
+        - generic [ref=e808]:
+          - generic [ref=e809]:
+            - generic [ref=e810]: "10"
+            - generic [ref=e811]:
+              - generic [ref=e812]: cy.md
+              - generic [ref=e813]: by CyberShadow
+          - heading "Unauthenticated remote code execution in OpenCode" [level=3] [ref=e814]:
+            - link "Unauthenticated remote code execution in OpenCode" [ref=e815] [cursor=pointer]:
+              - /url: https://cy.md/opencode-rce/
+              - generic [ref=e816]: Unauthenticated remote code execution in OpenCode
+              - img [ref=e817]
+        - generic [ref=e821]:
+          - paragraph [ref=e822]: Unauthenticated remote code execution in OpenCode is possible. Unauthenticated code execution is possible by using an unauthenticated method of code execution. For more information, visit OpenCode.org.
+          - generic [ref=e823]:
+            - generic [ref=e824]:
+              - img [ref=e825]
+              - text: 324 points
+            - generic [ref=e827]:
+              - img [ref=e828]
+              - text: 107 comments
+            - generic [ref=e830]:
+              - img [ref=e831]
+              - text: "HN #46581095"
+      - generic [ref=e834]:
+        - generic [ref=e836]:
+          - generic [ref=e837]:
+            - generic [ref=e838]: "11"
+            - generic [ref=e839]:
+              - generic [ref=e840]: nature.com
+              - generic [ref=e841]: by Growtika
+          - heading "Some ecologists fear their field is losing touch with nature" [level=3] [ref=e842]:
+            - link "Some ecologists fear their field is losing touch with nature" [ref=e843] [cursor=pointer]:
+              - /url: https://www.nature.com/articles/d41586-025-04150-w
+              - generic [ref=e844]: Some ecologists fear their field is losing touch with nature
+              - img [ref=e845]
+        - generic [ref=e849]:
+          - paragraph [ref=e850]: "Thank you for visiting nature. com. You are using a browser version with limited support for CSS. To obtain the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in Internet Explorer). In the meantime, to ensure continued support, we are displaying the site without styles and JavaScript. Advertisement Aisling Irwin is a science and environmental journalist based in Oxfordshire, UK. Search author on:PubMedGoogle Scholar A climber affixes a wildlife camera to a tree in French Guiana. Credit: Philippe Psaila/Science Photo Library Tadeo Ramirez-Parada studied the timing of plant flowering for his PhD — but he didn’t touch a single petal."
+          - generic [ref=e851]:
+            - generic [ref=e852]:
+              - img [ref=e853]
+              - text: 110 points
+            - generic [ref=e855]:
+              - img [ref=e856]
+              - text: 55 comments
+            - generic [ref=e858]:
+              - img [ref=e859]
+              - text: "HN #46540126"
+      - generic [ref=e862]:
+        - generic [ref=e864]:
+          - generic [ref=e865]:
+            - generic [ref=e866]: "12"
+            - generic [ref=e867]:
+              - generic [ref=e868]: piccalil.li
+              - generic [ref=e869]: by alexanderameye
+          - heading "Date is out, Temporal is in" [level=3] [ref=e870]:
+            - link "Date is out, Temporal is in" [ref=e871] [cursor=pointer]:
+              - /url: https://piccalil.li/blog/date-is-out-and-temporal-is-in/
+              - generic [ref=e872]: Date is out, Temporal is in
+              - img [ref=e873]
+        - generic [ref=e877]:
+          - paragraph [ref=e878]: JavaScript hascharacter. Sure, it doesn’t necessarily do everythingexactlythe way one might expect, but y’know, if you ask me, JavaScript has a real charm once you get to know it!
+          - generic [ref=e879]:
+            - generic [ref=e880]:
+              - img [ref=e881]
+              - text: 380 points
+            - generic [ref=e883]:
+              - img [ref=e884]
+              - text: 149 comments
+            - generic [ref=e886]:
+              - img [ref=e887]
+              - text: "HN #46589658"
+```

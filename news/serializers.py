@@ -36,5 +36,5 @@ class ArticleSerializer(serializers.ModelSerializer):
         ]
 
     def get_latest_summary(self, obj: Article):
-        summary = obj.summaries.order_by('-generated_at').first()
+        summary = obj.summaries.order_by('generated_at').first()
         return SummarySerializer(summary).data if summary else None
