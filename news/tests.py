@@ -53,47 +53,59 @@ class SummaryModelTest(TestCase):
 
 class ArticleOrderingTest(APITestCase):
     def setUp(self):
-        """Create test articles with different scraped_at times."""
+        """Create test articles from the same scrape batch."""
         now = timezone.now()
         
-        # Create articles with different scrape times
+        # Create articles from the same scrape batch (within seconds of each other)
         self.article1 = Article.objects.create(
             hn_id=1,
-            title="Oldest Article",
+            title="Article Rank 1",
             rank=1,
             points=100,
         )
         Article.objects.filter(pk=self.article1.pk).update(
-            scraped_at=now - timedelta(hours=3)
+            scraped_at=now
         )
         
         self.article2 = Article.objects.create(
             hn_id=2,
-            title="Middle Article",
+            title="Article Rank 2",
             rank=2,
             points=90,
         )
         Article.objects.filter(pk=self.article2.pk).update(
-            scraped_at=now - timedelta(hours=2)
+            scraped_at=now + timedelta(seconds=1)
         )
         
         self.article3 = Article.objects.create(
             hn_id=3,
-            title="Newest Article",
+            title="Article Rank 3",
             rank=3,
             points=80,
         )
         Article.objects.filter(pk=self.article3.pk).update(
-            scraped_at=now - timedelta(hours=1)
+            scraped_at=now + timedelta(seconds=2)
+        )
+        
+        # Create an old article from a previous scrape (should not appear)
+        self.old_article = Article.objects.create(
+            hn_id=999,
+            title="Old Article",
+            rank=1,
+            points=200,
+        )
+        Article.objects.filter(pk=self.old_article.pk).update(
+            scraped_at=now - timedelta(hours=2)
         )
         
         # Refresh from database to get updated scraped_at values
         self.article1.refresh_from_db()
         self.article2.refresh_from_db()
         self.article3.refresh_from_db()
+        self.old_article.refresh_from_db()
 
     def test_articles_ordered_by_rank_ascending(self):
-        """Test that articles are ordered by rank in ascending order."""
+        """Test that only articles from latest batch are shown, ordered by rank."""
         url = '/api/articles/'
         response = self.client.get(url)
         
@@ -105,19 +117,20 @@ class ArticleOrderingTest(APITestCase):
         else:
             articles = response.data
         
-        # Verify we have the articles
-        self.assertGreaterEqual(len(articles), 3)
+        # Should only get articles from the latest batch (not the old one)
+        self.assertEqual(len(articles), 3, "Should only return articles from latest batch")
         
-        # Extract the first 3 articles
-        first_three = list(articles)[:3]
+        # Verify the old article is not included
+        article_ids = [a['hn_id'] for a in articles]
+        self.assertNotIn(999, article_ids, "Old article should not be included")
         
         # Verify order: rank 1, 2, 3
-        self.assertEqual(first_three[0]['hn_id'], 1, "First article should be rank 1")
-        self.assertEqual(first_three[1]['hn_id'], 2, "Second article should be rank 2")
-        self.assertEqual(first_three[2]['hn_id'], 3, "Third article should be rank 3")
+        self.assertEqual(articles[0]['hn_id'], 1, "First article should be rank 1")
+        self.assertEqual(articles[1]['hn_id'], 2, "Second article should be rank 2")
+        self.assertEqual(articles[2]['hn_id'], 3, "Third article should be rank 3")
         
         # Verify ranks are in ascending order
-        ranks = [article['rank'] for article in first_three]
+        ranks = [article['rank'] for article in articles]
         for i in range(len(ranks) - 1):
             self.assertLessEqual(
                 ranks[i],

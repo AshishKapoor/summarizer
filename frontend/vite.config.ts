@@ -14,5 +14,7 @@ export default defineConfig({
     proxy: {
       "/api": "http://localhost:8000",
     },
+    host: true, // Listen on all addresses, including LAN and public addresses
+    port: 5173,
   },
 });
