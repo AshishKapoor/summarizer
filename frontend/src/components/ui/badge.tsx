@@ -3,7 +3,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
-  variant?: "primary" | "muted";
+  variant?: "primary" | "muted" | "secondary" | "outline";
 }
 
 export function Badge({
@@ -16,6 +16,8 @@ export function Badge({
   const variants = {
     primary: "bg-slate-900 text-slate-50",
     muted: "bg-slate-100 text-slate-600",
+    secondary: "bg-indigo-100 text-indigo-700",
+    outline: "border border-slate-300 bg-white text-slate-700",
   };
   return <span className={cn(base, variants[variant], className)} {...props} />;
 }

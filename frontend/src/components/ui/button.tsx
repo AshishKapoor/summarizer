@@ -14,22 +14,32 @@ const buttonVariants = {
 
 export type ButtonVariant = keyof typeof buttonVariants;
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   asChild?: boolean;
   variant?: ButtonVariant;
+  size?: "default" | "sm";
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = "default", asChild = false, ...props }, ref) => {
+  (
+    {
+      className,
+      variant = "default",
+      size = "default",
+      asChild = false,
+      ...props
+    },
+    ref,
+  ) => {
     const Comp = asChild ? Slot : "button";
+    const sizeClasses = size === "sm" ? "px-3 py-1.5 text-xs" : "";
     return (
       <Comp
-        className={cn(buttonVariants[variant], className)}
+        className={cn(buttonVariants[variant], sizeClasses, className)}
         ref={ref}
         {...props}
       />
     );
-  }
+  },
 );
 Button.displayName = "Button";

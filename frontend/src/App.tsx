@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import {
   Activity,
   ArrowUpRight,
@@ -7,60 +8,54 @@ import {
   RefreshCw,
 } from "lucide-react";
 
-import { ArticleCard } from "@/components/article-card";
+import { ArticlesTable } from "@/components/articles-table";
 import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
 import { API_BASE, fetchArticles, triggerRefresh } from "@/lib/api";
-import type { Article } from "@/types";
 
 function App() {
-  const [articles, setArticles] = useState<Article[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [refreshing, setRefreshing] = useState(false);
+  const queryClient = useQueryClient();
   const [error, setError] = useState<string | null>(null);
 
-  const loadArticles = async () => {
-    setLoading(true);
-    setError(null);
-    try {
-      const data = await fetchArticles();
-      setArticles(data.results);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to load articles");
-    } finally {
-      setLoading(false);
-    }
-  };
+  // Fetch articles with React Query - auto-refetch every 1 hour (3600000ms)
+  const { data, isLoading } = useQuery({
+    queryKey: ["articles"],
+    queryFn: fetchArticles,
+    refetchInterval: 3600000, // 1 hour in milliseconds
+    refetchIntervalInBackground: true,
+    staleTime: 300000, // Consider data stale after 5 minutes
+  });
 
-  const handleRefresh = async () => {
-    setRefreshing(true);
-    setError(null);
-    try {
-      await triggerRefresh();
-      await loadArticles();
-    } catch (err) {
+  const articles = useMemo(() => data?.results || [], [data?.results]);
+
+  // Mutation for manual refresh
+  const refreshMutation = useMutation({
+    mutationFn: triggerRefresh,
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["articles"] });
+      setError(null);
+    },
+    onError: (err) => {
       setError(err instanceof Error ? err.message : "Refresh failed");
-    } finally {
-      setRefreshing(false);
-    }
-  };
+    },
+  });
 
-  useEffect(() => {
-    loadArticles();
-  }, []);
+  const handleRefresh = () => {
+    setError(null);
+    refreshMutation.mutate();
+  };
 
   const stats = useMemo(() => {
     const totalPoints = articles.reduce((sum, a) => sum + a.points, 0);
     const totalComments = articles.reduce(
       (sum, a) => sum + a.comments_count,
-      0
+      0,
     );
     return { totalPoints, totalComments };
   }, [articles]);
 
   const hero = (
     <div className="hero-gradient relative overflow-hidden rounded-[28px] p-8 shadow-soft text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.25),transparent_30%)]" />
+      <div className="absolute inset-0]" />
       <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div className="space-y-3 md:max-w-2xl">
           <div className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em]">
@@ -75,13 +70,17 @@ function App() {
             feed.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Button onClick={handleRefresh} disabled={refreshing}>
-              {refreshing ? (
+            <Button
+              variant="outline"
+              onClick={handleRefresh}
+              disabled={refreshMutation.isPending}
+            >
+              {refreshMutation.isPending ? (
                 <Loader2 className="h-4 w-4 animate-spin" />
               ) : (
                 <RefreshCw className="h-4 w-4" />
               )}
-              {refreshing ? "Refreshing…" : "Refresh now"}
+              {refreshMutation.isPending ? "Refreshing…" : "Refresh now"}
             </Button>
             <Button variant="outline" asChild>
               <a
@@ -150,25 +149,20 @@ function App() {
           {error}
         </div>
       ) : null}
-      {loading ? (
-        <div className="grid gap-4 md:grid-cols-2">
-          {Array.from({ length: 6 }).map((_, idx) => (
-            <Skeleton key={idx} className="h-48" />
-          ))}
+      {isLoading ? (
+        <div className="space-y-4">
+          <div className="h-64 rounded-2xl bg-slate-100 animate-pulse" />
+          <div className="h-16 rounded-2xl bg-slate-100 animate-pulse" />
         </div>
       ) : (
-        <div className="grid gap-4 md:grid-cols-2">
-          {articles.map((article) => (
-            <ArticleCard key={article.id} article={article} />
-          ))}
-        </div>
+        <ArticlesTable articles={articles} />
       )}
     </section>
   );
 
   return (
-    <div className="min-h-screen bg-transparent text-slate-900">
-      <div className="mx-auto max-w-6xl space-y-10 px-4 py-10 md:py-14">
+    <div className="text-slate-900">
+      <div className="mx-auto space-y-10 px-4 py-10 md:py-16">
         {hero}
         {listSection}
       </div>

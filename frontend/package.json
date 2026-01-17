@@ -12,6 +12,8 @@
     "test:e2e:ui": "playwright test --ui"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.90.18",
+    "@tanstack/react-table": "^8.21.3",
     "clsx": "^2.1.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
